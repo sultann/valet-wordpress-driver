@@ -14,7 +14,7 @@ If you've ever pulled a production database locally and faced broken images ever
 ## Installation
 
 ```bash
-curl -sL https://raw.githubusercontent.com/sultann/valet-wordpress-driver/main/WordPressValetDriver.php \
+curl -sL https://raw.githubusercontent.com/sultann/valet-wordpress-driver/master/WordPressValetDriver.php \
   -o ~/.config/valet/Drivers/WordPressValetDriver.php && valet restart
 ```
 

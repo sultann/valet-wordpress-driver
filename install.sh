@@ -5,7 +5,7 @@
 
 set -e
 
-DRIVER_URL="https://raw.githubusercontent.com/sultann/valet-wordpress-driver/main/WordPressValetDriver.php"
+DRIVER_URL="https://raw.githubusercontent.com/sultann/valet-wordpress-driver/master/WordPressValetDriver.php"
 DRIVER_DIR="$HOME/.config/valet/Drivers"
 DRIVER_FILE="$DRIVER_DIR/WordPressValetDriver.php"
 
