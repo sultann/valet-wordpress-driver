@@ -81,7 +81,7 @@ class WordPressValetDriver extends BaseWordPressValetDriver
      *
      * @return string|false Local file path, remote URL, or false.
      */
-    public function isStaticFile(string $sitePath, string $siteName, string $uri): string|false
+    public function isStaticFile(string $sitePath, string $siteName, string $uri)/* : string|false */
     {
         self::$isRemoteRequest = false;
 
@@ -176,13 +176,13 @@ class WordPressValetDriver extends BaseWordPressValetDriver
      *
      * @return string|false The static file path or false.
      */
-    private function handleMultisiteStaticFile(string $sitePath, string $uri): string|false
+    private function handleMultisiteStaticFile(string $sitePath, string $uri)/* : string|false */
     {
         if (!$this->isWordPressDirectory($uri)) {
             return false;
         }
 
-        if (str_ends_with($uri, '/')) {
+        if (substr($uri, -1) === '/') {
             return false;
         }
 
